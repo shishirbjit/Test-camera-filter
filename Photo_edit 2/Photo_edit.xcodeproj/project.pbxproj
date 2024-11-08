@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		895FA63A2CDE24F7009D1C21 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 895FA6392CDE24F7009D1C21 /* PrivacyInfo.xcprivacy */; };
+		895FA6452CDE3414009D1C21 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA63D2CDE3414009D1C21 /* BannerCell.swift */; };
+		895FA6462CDE3414009D1C21 /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895FA63E2CDE3414009D1C21 /* BannerCell.xib */; };
+		895FA6472CDE3414009D1C21 /* IAP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895FA6402CDE3414009D1C21 /* IAP.storyboard */; };
+		895FA6482CDE3414009D1C21 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA6412CDE3414009D1C21 /* PageControl.swift */; };
+		895FA6492CDE3414009D1C21 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA6422CDE3414009D1C21 /* PrivacyViewController.swift */; };
+		895FA64A2CDE3414009D1C21 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA6432CDE3414009D1C21 /* PurchaseViewController.swift */; };
+		895FA64C2CDE36B1009D1C21 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA64B2CDE36B1009D1C21 /* BaseViewController.swift */; };
+		895FA64E2CDE37C6009D1C21 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FA64D2CDE37C6009D1C21 /* CustomView.swift */; };
 		89D24FFD2CDE0389009A8D54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D24FFC2CDE0389009A8D54 /* AppDelegate.swift */; };
 		89D24FFF2CDE0389009A8D54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D24FFE2CDE0389009A8D54 /* SceneDelegate.swift */; };
 		89D250012CDE0389009A8D54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D250002CDE0389009A8D54 /* ViewController.swift */; };
@@ -53,6 +61,14 @@
 
 /* Begin PBXFileReference section */
 		895FA6392CDE24F7009D1C21 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		895FA63D2CDE3414009D1C21 /* BannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		895FA63E2CDE3414009D1C21 /* BannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		895FA6402CDE3414009D1C21 /* IAP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IAP.storyboard; sourceTree = "<group>"; };
+		895FA6412CDE3414009D1C21 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		895FA6422CDE3414009D1C21 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		895FA6432CDE3414009D1C21 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		895FA64B2CDE36B1009D1C21 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		895FA64D2CDE37C6009D1C21 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		89D24FF92CDE0389009A8D54 /* Photo_edit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photo_edit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D24FFC2CDE0389009A8D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D24FFE2CDE0389009A8D54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +125,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		895FA63F2CDE3414009D1C21 /* Banner Cell */ = {
+			isa = PBXGroup;
+			children = (
+				895FA63D2CDE3414009D1C21 /* BannerCell.swift */,
+				895FA63E2CDE3414009D1C21 /* BannerCell.xib */,
+			);
+			path = "Banner Cell";
+			sourceTree = "<group>";
+		};
+		895FA6442CDE3414009D1C21 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				895FA63F2CDE3414009D1C21 /* Banner Cell */,
+				895FA6402CDE3414009D1C21 /* IAP.storyboard */,
+				895FA6412CDE3414009D1C21 /* PageControl.swift */,
+				895FA6422CDE3414009D1C21 /* PrivacyViewController.swift */,
+				895FA6432CDE3414009D1C21 /* PurchaseViewController.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
 		89D24FF02CDE0389009A8D54 = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +167,11 @@
 			children = (
 				895FA6392CDE24F7009D1C21 /* PrivacyInfo.xcprivacy */,
 				89D250102CDE03CA009A8D54 /* Lib */,
+				895FA6442CDE3414009D1C21 /* IAP */,
 				89D24FFC2CDE0389009A8D54 /* AppDelegate.swift */,
 				89D24FFE2CDE0389009A8D54 /* SceneDelegate.swift */,
+				895FA64D2CDE37C6009D1C21 /* CustomView.swift */,
+				895FA64B2CDE36B1009D1C21 /* BaseViewController.swift */,
 				89D250002CDE0389009A8D54 /* ViewController.swift */,
 				89D250022CDE0389009A8D54 /* Main.storyboard */,
 				89D250052CDE038A009A8D54 /* Assets.xcassets */,
@@ -245,6 +285,7 @@
 				89D250492CDE03DD009A8D54 /* PhotoCropEditorBorder.png in Resources */,
 				89D250472CDE03DD009A8D54 /* LaunchScreen.storyboard in Resources */,
 				89D250562CDE03DD009A8D54 /* PhotoEditorViewController.xib in Resources */,
+				895FA6462CDE3414009D1C21 /* BannerCell.xib in Resources */,
 				89D250092CDE038A009A8D54 /* LaunchScreen.storyboard in Resources */,
 				89D250482CDE03DD009A8D54 /* icomoon.ttf in Resources */,
 				89D250502CDE03DD009A8D54 /* StickerCollectionViewCell.xib in Resources */,
@@ -255,6 +296,7 @@
 				89D250042CDE0389009A8D54 /* Main.storyboard in Resources */,
 				89D250532CDE03DD009A8D54 /* ColorCollectionViewCell.xib in Resources */,
 				89D250432CDE03DD009A8D54 /* PhotoCropEditorBorder@3x.png in Resources */,
+				895FA6472CDE3414009D1C21 /* IAP.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,14 +309,18 @@
 			files = (
 				89D250552CDE03DD009A8D54 /* PhotoEditor+Font.swift in Sources */,
 				89D250452CDE03DD009A8D54 /* UIImage+Crop.swift in Sources */,
+				895FA64C2CDE36B1009D1C21 /* BaseViewController.swift in Sources */,
 				89D250392CDE03DD009A8D54 /* PhotoEditor+Drawing.swift in Sources */,
 				89D250372CDE03DD009A8D54 /* PhotoEditor+StickersViewController.swift in Sources */,
 				89D2504E2CDE03DD009A8D54 /* CropViewController.swift in Sources */,
 				89D250342CDE03DD009A8D54 /* UIView+Image.swift in Sources */,
 				89D250012CDE0389009A8D54 /* ViewController.swift in Sources */,
 				89D250382CDE03DD009A8D54 /* EmojiCollectionViewCell.swift in Sources */,
+				895FA64E2CDE37C6009D1C21 /* CustomView.swift in Sources */,
 				89D2503F2CDE03DD009A8D54 /* ResizeControl.swift in Sources */,
 				89D2503B2CDE03DD009A8D54 /* PhotoEditor+Gestures.swift in Sources */,
+				895FA64A2CDE3414009D1C21 /* PurchaseViewController.swift in Sources */,
+				895FA6452CDE3414009D1C21 /* BannerCell.swift in Sources */,
 				89D2504F2CDE03DD009A8D54 /* PhotoEditor+Crop.swift in Sources */,
 				89D250522CDE03DD009A8D54 /* GradientView.swift in Sources */,
 				89D250512CDE03DD009A8D54 /* PhotoEditor+Controls.swift in Sources */,
@@ -282,6 +328,7 @@
 				89D2504A2CDE03DD009A8D54 /* Protocols.swift in Sources */,
 				89D250362CDE03DD009A8D54 /* UIImageView+Alpha.swift in Sources */,
 				89D250542CDE03DD009A8D54 /* CropRectView.swift in Sources */,
+				895FA6492CDE3414009D1C21 /* PrivacyViewController.swift in Sources */,
 				89D2504D2CDE03DD009A8D54 /* ColorsCollectionViewDelegate.swift in Sources */,
 				89D2504C2CDE03DD009A8D54 /* PhotoEditorViewController.swift in Sources */,
 				89D2503E2CDE03DD009A8D54 /* ColorCollectionViewCell.swift in Sources */,
@@ -290,6 +337,7 @@
 				89D250422CDE03DD009A8D54 /* StickerCollectionViewCell.swift in Sources */,
 				89D250462CDE03DD009A8D54 /* EmojisCollectionViewDelegate.swift in Sources */,
 				89D2504B2CDE03DD009A8D54 /* UIImage+Size.swift in Sources */,
+				895FA6482CDE3414009D1C21 /* PageControl.swift in Sources */,
 				89D250352CDE03DD009A8D54 /* PhotoEditor+UITextView.swift in Sources */,
 				89D250442CDE03DD009A8D54 /* StickersViewController.swift in Sources */,
 				89D24FFF2CDE0389009A8D54 /* SceneDelegate.swift in Sources */,
@@ -454,8 +502,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,8 +539,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
