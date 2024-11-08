@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Photo_edit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO5-TO-Vu7">
+                                <rect key="frame" x="81" y="737" width="231" height="41"/>
+                                <color key="tintColor" red="0.55840304870000002" green="0.8580657263" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload Image From Gallary">
+                                    <backgroundConfiguration key="background" cornerRadius="25">
+                                        <color key="backgroundColor" red="0.1764705882" green="0.41568627450000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="picImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="462-L6-AOP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="No Image" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-ZW-HSc">
+                                <rect key="frame" x="16" y="115" width="361" height="548"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Your Image In Your Way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njx-jT-toP">
+                                <rect key="frame" x="55" y="75" width="283" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.1764705926" green="0.41568624970000001" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yb0-ZW-HSc" firstAttribute="top" secondItem="Njx-jT-toP" secondAttribute="bottom" constant="16" id="3qA-kT-lYy"/>
+                            <constraint firstItem="Njx-jT-toP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="71W-sT-8QE"/>
+                            <constraint firstItem="Njx-jT-toP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="LNQ-gG-MXF"/>
+                            <constraint firstItem="Yb0-ZW-HSc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LQJ-AG-cFQ"/>
+                            <constraint firstItem="OO5-TO-Vu7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yb0-ZW-HSc" secondAttribute="bottom" constant="16" id="Rho-74-Vhw"/>
+                            <constraint firstItem="OO5-TO-Vu7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pSx-zP-FCd"/>
+                            <constraint firstItem="Yb0-ZW-HSc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rU0-I5-PyX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OO5-TO-Vu7" secondAttribute="bottom" constant="40" id="taZ-MH-bq2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Yb0-ZW-HSc" id="C55-Ki-3sb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.89312977099236" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="No Image" width="389" height="548"/>
+    </resources>
+</document>
