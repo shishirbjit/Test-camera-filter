@@ -137,6 +137,7 @@ public final class PhotoEditorViewController: UIViewController {
         bottomToolbar.isHidden = hide
         bottomGradient.isHidden = hide
     }
+
 }
 
 extension PhotoEditorViewController: ColorDelegate {

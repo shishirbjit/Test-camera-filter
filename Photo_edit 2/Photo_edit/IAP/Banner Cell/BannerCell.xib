@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCell" id="gTV-IL-0wX" customClass="BannerCell" customModule="AskAI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFa-CV-9jr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sDS-oQ-H2P">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sDS-oQ-H2P" firstAttribute="top" secondItem="LFa-CV-9jr" secondAttribute="top" id="2G0-DK-GsO"/>
+                            <constraint firstItem="sDS-oQ-H2P" firstAttribute="leading" secondItem="LFa-CV-9jr" secondAttribute="leading" id="5lb-br-MeK"/>
+                            <constraint firstAttribute="trailing" secondItem="sDS-oQ-H2P" secondAttribute="trailing" id="Hr3-1E-8Xv"/>
+                            <constraint firstAttribute="bottom" secondItem="sDS-oQ-H2P" secondAttribute="bottom" id="x9Q-Fi-UOp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornorRadious">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LFa-CV-9jr" secondAttribute="bottom" id="HxY-Uk-OXH"/>
+                <constraint firstAttribute="trailing" secondItem="LFa-CV-9jr" secondAttribute="trailing" id="OKQ-Uy-dbB"/>
+                <constraint firstItem="LFa-CV-9jr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="W8d-lz-TqA"/>
+                <constraint firstItem="LFa-CV-9jr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qIS-bI-cop"/>
+            </constraints>
+            <connections>
+                <outlet property="bannerImageVIew" destination="sDS-oQ-H2P" id="2gg-qS-TGe"/>
+            </connections>
+            <point key="canvasLocation" x="-110" y="20"/>
+        </collectionViewCell>
+    </objects>
+</document>

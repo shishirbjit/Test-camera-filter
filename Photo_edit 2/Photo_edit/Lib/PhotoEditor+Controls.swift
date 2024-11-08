@@ -41,12 +41,25 @@ extension PhotoEditorViewController {
         addStickersViewController()
     }
 
-    @IBAction func drawButtonTapped(_ sender: Any) {
-        isDrawing = true
-        canvasImageView.isUserInteractionEnabled = false
-        doneButton.isHidden = false
-        colorPickerView.isHidden = false
-        hideToolbar(hide: true)
+    @IBAction func drawButtonTapped(_ sender: UIButton) {
+        guard let vc = UIStoryboard.init(name: "IAP", bundle: nil).instantiateViewController(withIdentifier: "PurchaseViewController") as? PurchaseViewController else { return }
+        let navController = UINavigationController(rootViewController: vc)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
+
+        // MARK: - TODO check if IAP montly subscribe or not
+        var isSubscribed: Bool = false
+
+        if isSubscribed{
+            isDrawing = true
+            canvasImageView.isUserInteractionEnabled = false
+            doneButton.isHidden = false
+            colorPickerView.isHidden = false
+            hideToolbar(hide: true)
+        }
+        else{
+
+        }
     }
 
     @IBAction func textButtonTapped(_ sender: Any) {
